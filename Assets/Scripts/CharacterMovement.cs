@@ -37,22 +37,27 @@ public class CharacterMovement : MonoBehaviour
     {
         //rb.velocity = new Vector3(0, 0, 5) * verticalSpeed;
 
-        rb.AddForce(Vector3.forward * verticalSpeed);
-
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (movementEnabled == true)
         {
-            rb.AddForce(Vector3.right * 300);
-        }
+            rb.AddForce(Vector3.forward * verticalSpeed);
 
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            rb.AddForce(Vector3.left * 300);
-        }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                rb.AddForce(Vector3.right * 300);
+            }
 
-        if (Input.GetKey(KeyCode.Space))
-        {
-            rb.AddForce(Vector3.up * 500);
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                rb.AddForce(Vector3.left * 300);
+            }
+
+            if (Input.GetKey(KeyCode.Space))
+            {
+                rb.AddForce(Vector3.up * 500);
+            }
         }
+        
+        
 
 
 

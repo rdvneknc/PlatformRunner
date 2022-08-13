@@ -4,47 +4,52 @@ using UnityEngine;
 
 public class HalfDonut : MonoBehaviour
 {
-    //private float startDelay = 5;
-    //private float repeatTiming = 10;
+    //private float startDelay = 2;
+    //private float repeatTiming = 12;
 
-    public Rigidbody donutRb;
+    public Transform target;
+    public Transform target2;
+    public float speed;
+
+    public bool moveHalfDonut = false;
+
 
 
     private void Awake()
     {
-        donutRb.GetComponent<Rigidbody>();
+        //donutRb.GetComponent<Rigidbody>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
-        //InvokeRepeating("MoveTheStick", startDelay, repeatTiming);
+        //donutRb.AddForce(Vector3.left * 500, ForceMode.Impulse);
+
+        //InvokeRepeating("StickMovement", startDelay, repeatTiming);
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(StickMovement());
+        
+        if(moveHalfDonut == false)
+        {
+            moveHalfDonut = true;
+            StartCoroutine(StickMovement());
+        }
+        
     }
 
     IEnumerator StickMovement()
     {
-        //donutRb.AddForce(Vector3.left * 500, ForceMode.Impulse);
+        
+        transform.position = Vector3.Lerp(transform.position, target.position, speed * Time.deltaTime);
         yield return new WaitForSeconds(3);
+        transform.position = Vector3.Lerp(transform.position, target2.position, speed * Time.deltaTime);
+        yield return new WaitForSeconds(3);
+        moveHalfDonut = false;
+        
 
-        donutRb.velocity = new Vector3(-30, transform.position.y, transform.position.z);
-        //donutRb.MovePosition(new Vector3(-1, 0, 0));
-
-        yield return new WaitForSeconds(5);
-
-
-
-        //donutRb.velocity = new Vector3(-30, transform.position.y, transform.position.z);
-
-        //transform.Translate(new Vector3(-5.5f, 0, 0));
-
-        //transform.Translate(new Vector3(5.5f, 0, 0));
 
     }
 }
