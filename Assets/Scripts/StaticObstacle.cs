@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class StaticObstacle : MonoBehaviour
 {
+    [SerializeField] private Transform player;
+
+    [SerializeField] private Transform respawnPoint;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +22,24 @@ public class StaticObstacle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
         if (other.gameObject.tag == "Player")
         {
-            new WaitForSeconds(3);
-            other.transform.position = new Vector3(0, 1.22f, -36f);
-            CharacterMovement.verticalSpeed = 250;
+            StartCoroutine("PlayerRespawn");
+            
+
         }
 
     }
+
+    
+    IEnumerator PlayerRespawn()
+    {
+        CharacterMovement.movementEnabled = false;
+        yield return new WaitForSeconds(2);
+        player.transform.position = respawnPoint.transform.position;
+        CharacterMovement.movementEnabled = true;
+    }
+
+
 }

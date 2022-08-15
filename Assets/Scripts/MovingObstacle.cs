@@ -9,6 +9,10 @@ public class MovingObstacle : MonoBehaviour
     private Transform target;
     private int wayPointIndex;
 
+    [SerializeField] private Transform player;
+
+    [SerializeField] private Transform respawnPoint;
+
     void Start()
     {
         target = WayPoints.wayPoints[0];
@@ -32,14 +36,25 @@ public class MovingObstacle : MonoBehaviour
   
     }
 
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+
+        if (other.gameObject.tag == "Player")
         {
-            other.transform.position = new Vector3(0, 1.22f, -36f);
-            CharacterMovement.verticalSpeed = 250;
+            StartCoroutine("PlayerRespawn");
+
+
         }
-        
+
+    }
+
+    IEnumerator PlayerRespawn()
+    {
+        CharacterMovement.movementEnabled = false;
+        yield return new WaitForSeconds(3);
+        player.transform.position = respawnPoint.transform.position;
+        CharacterMovement.movementEnabled = true;
     }
 
 }
