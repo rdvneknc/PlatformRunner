@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public static float verticalSpeed = 250;
-    public float horizontalSpeed;
-    public float maximumSpeed = 255;
+    public static float verticalSpeed = 240;
+    //public float horizontalSpeed;
+    public float maximumSpeed = 245;
 
     public Rigidbody rb;
-    public Vector3 move;
+    //public Vector3 move;
     public static bool movementEnabled = true;
 
     public Animator anim;
