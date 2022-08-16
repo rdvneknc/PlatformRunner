@@ -51,7 +51,9 @@ public class MovingObstacle : MonoBehaviour
 
         if (other.gameObject.tag == "Opponent")
         {
-            other.transform.position = respawnPoint.transform.position;
+            other.gameObject.transform.position = respawnPoint.transform.position;
+
+           
 
 
         }
