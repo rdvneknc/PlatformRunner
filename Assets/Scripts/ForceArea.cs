@@ -19,11 +19,5 @@ public class ForceArea : MonoBehaviour
         }
     }
 
-    private void Exit(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            other.attachedRigidbody.AddForce(Vector3.left * 0);
-        }
-    }
+
 }

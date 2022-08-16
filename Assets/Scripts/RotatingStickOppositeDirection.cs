@@ -18,12 +18,12 @@ public class RotatingStickOppositeDirection : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Player")
+        /*if (other.gameObject.tag == "Player")
         {
             CharacterMovement.movementEnabled = false;
 
 
-        }
+        }*/
     }
 
 

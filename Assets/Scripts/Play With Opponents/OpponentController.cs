@@ -13,8 +13,8 @@ public class OpponentController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        navMeshAgent.destination = targetPosition.position;
+        navMeshAgent.SetDestination(new Vector3(targetPosition.position.x, targetPosition.position.y, targetPosition.position.z));
     }
 }

@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Paint : MonoBehaviour
 {
-    //public Material wallMaterial;
+    public Material redColor;
 
-    public Renderer render;
+    //public Renderer render;
 
-    public Color defaultColor;
+    //public Color defaultColor;
 
     // Start is called before the first frame update
     void Start()
     {
-        //gameObject.GetComponent<Material>();
+        gameObject.GetComponent<Material>();
 
         //render.GetComponent<Renderer>();
     }
@@ -26,9 +26,12 @@ public class Paint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Brush")
+        if(other.gameObject.tag == "Brush")
         {
-            render.material.color = defaultColor;
+            
+            //redColor.color = Color.red;
+
+            //render.material.color = defaultColor;
 
         }
     }

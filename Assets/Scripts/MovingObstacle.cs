@@ -11,6 +11,8 @@ public class MovingObstacle : MonoBehaviour
 
     [SerializeField] private Transform player;
 
+    [SerializeField] private Transform[] opponents;
+
     [SerializeField] private Transform respawnPoint;
 
     void Start()
@@ -43,6 +45,13 @@ public class MovingObstacle : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             StartCoroutine("PlayerRespawn");
+
+
+        }
+
+        if (other.gameObject.tag == "Opponent")
+        {
+            other.transform.position = respawnPoint.transform.position;
 
 
         }

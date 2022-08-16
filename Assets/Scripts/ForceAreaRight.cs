@@ -12,4 +12,6 @@ public class ForceAreaRight : MonoBehaviour
             other.attachedRigidbody.AddForce(Vector3.right * 200);
         }
     }
+
+
 }

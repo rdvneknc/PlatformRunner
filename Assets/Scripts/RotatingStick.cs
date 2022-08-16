@@ -21,10 +21,10 @@ public class RotatingStick : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        /*if (other.gameObject.tag == "Player")
         {
             other.attachedRigidbody.AddForce(Vector3.back * 30000);
-        }
+        }*/
     }
 
 

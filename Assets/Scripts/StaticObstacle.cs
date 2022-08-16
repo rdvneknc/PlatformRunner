@@ -8,6 +8,9 @@ public class StaticObstacle : MonoBehaviour
 
     [SerializeField] private Transform respawnPoint;
 
+    [SerializeField] private Transform[] opponents;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,13 @@ public class StaticObstacle : MonoBehaviour
         {
             StartCoroutine("PlayerRespawn");
             
+
+        }
+
+        if (other.gameObject.tag == "Opponent")
+        {
+            other.gameObject.transform.position = respawnPoint.transform.position;
+
 
         }
 

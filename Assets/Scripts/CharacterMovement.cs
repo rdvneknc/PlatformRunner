@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public static float verticalSpeed = 240;
+    public  float verticalSpeed = 240;
     //public float horizontalSpeed;
     public float maximumSpeed = 245;
 
@@ -13,16 +13,19 @@ public class CharacterMovement : MonoBehaviour
     public static bool movementEnabled = true;
 
     public Animator anim;
+
     // Start is called before the first frame update
 
     void Awake()
     {
         rb.GetComponent<Rigidbody>();
+
     }
     void Update()
     {
         anim.SetFloat("vertical", Input.GetAxis("Vertical"));
         anim.SetFloat("horizontal", Input.GetAxis("Horizontal"));
+
 
         verticalSpeed += 0.5f * Time.deltaTime;
 
