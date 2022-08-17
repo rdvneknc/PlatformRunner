@@ -4,37 +4,36 @@ using UnityEngine;
 
 public class HalfDonut : MonoBehaviour
 {
-    //private float startDelay = 2;
-    //private float repeatTiming = 12;
-
-    public Transform target;
-    public Transform target2;
     public float speed;
+    public float lenght;
+    public float delay;
 
-    public bool moveHalfDonut = false;
+    public Vector3 direction;
+    private Vector3 startPosition;
 
 
-    void Update()
+    private void Start()
     {
-        
-        if(moveHalfDonut == false)
+        startPosition = transform.position;
+
+        StartCoroutine(IPlayAnimation());
+    }
+    private IEnumerator IPlayAnimation()
+    {
+        while (true)
         {
-            moveHalfDonut = true;
-            StartCoroutine(StickMovement());
+            yield return new WaitForEndOfFrame();
+
+            var targetPos = startPosition + direction * lenght;
+            float dist = Vector3.Distance(transform.position, targetPos);
+            transform.position = Vector3.Lerp(transform.position, targetPos, speed * Time.deltaTime);
+
+            if (dist < 0.1f)
+            {
+                direction *= -1;
+                yield return new WaitForSeconds(delay);
+            }
         }
-        
     }
 
-    IEnumerator StickMovement()
-    {
-        
-        transform.position = Vector3.Lerp(transform.position, target.position, speed);
-        yield return new WaitForSeconds(4);
-        transform.position = Vector3.Lerp(transform.position, target2.position, speed);
-        yield return new WaitForSeconds(4);
-        moveHalfDonut = false;
-        
-
-
-    }
 }

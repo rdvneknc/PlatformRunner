@@ -388,7 +388,7 @@ NavMeshObstacle:
   m_Extents: {x: 0.047000002, y: 0.128, z: 0.047000002}
   m_MoveThreshold: 0.1
   m_Carve: 1
-  m_CarveOnlyStationary: 1
+  m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
 --- !u!65 &63002176
@@ -790,6 +790,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_Name
       value: Girl (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_TagString
@@ -1198,6 +1202,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 389091857}
   navMeshAgent: {fileID: 166168785}
+  moveSpeed: 10
+  rotateSpeed: 10
+  calculateInterval: 10
 --- !u!65 &166168787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1336,6 +1343,10 @@ PrefabInstance:
       value: Girl (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_TagString
       value: Opponent
       objectReference: {fileID: 0}
@@ -1405,6 +1416,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 718105259}
   navMeshAgent: {fileID: 269035706}
+  moveSpeed: 10
+  rotateSpeed: 10
+  calculateInterval: 10
 --- !u!65 &269035708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1903,6 +1917,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 75250688}
   navMeshAgent: {fileID: 400107656}
+  moveSpeed: 10
+  rotateSpeed: 10
+  calculateInterval: 10
 --- !u!4 &400107658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
@@ -2198,6 +2215,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_Name
       value: Girl (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_TagString
@@ -2792,6 +2813,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_Name
       value: Girl (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_TagString
@@ -3703,6 +3728,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 718105259}
   navMeshAgent: {fileID: 767404922}
+  moveSpeed: 10
+  rotateSpeed: 10
+  calculateInterval: 10
 --- !u!65 &767404924
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3789,7 +3817,7 @@ NavMeshObstacle:
   m_Extents: {x: 0.047000002, y: 0.128, z: 0.047000002}
   m_MoveThreshold: 0.1
   m_Carve: 1
-  m_CarveOnlyStationary: 1
+  m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
 --- !u!65 &796022198
@@ -4316,6 +4344,10 @@ PrefabInstance:
       value: Girl (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_TagString
       value: Opponent
       objectReference: {fileID: 0}
@@ -4483,6 +4515,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_Name
       value: Girl (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_TagString
@@ -4759,6 +4795,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 1608094949}
   navMeshAgent: {fileID: 1033155963}
+  moveSpeed: 10
+  rotateSpeed: 10
+  calculateInterval: 10
 --- !u!65 &1033155965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5019,6 +5058,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 762614706}
   navMeshAgent: {fileID: 1095057121}
+  moveSpeed: 10
+  rotateSpeed: 10
+  calculateInterval: 10
 --- !u!195 &1095057121
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5478,7 +5520,7 @@ NavMeshObstacle:
   m_Extents: {x: 0.047000002, y: 0.128, z: 0.047000002}
   m_MoveThreshold: 0.1
   m_Carve: 1
-  m_CarveOnlyStationary: 1
+  m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
 --- !u!1001 &1191034697
@@ -5983,6 +6025,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 762614706}
   navMeshAgent: {fileID: 1268624342}
+  moveSpeed: 10
+  rotateSpeed: 10
+  calculateInterval: 10
 --- !u!4 &1268624344 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
@@ -6074,7 +6119,7 @@ NavMeshObstacle:
   m_Extents: {x: 0.047000002, y: 0.128, z: 0.047000002}
   m_MoveThreshold: 0.1
   m_Carve: 1
-  m_CarveOnlyStationary: 1
+  m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
 --- !u!65 &1289688023
@@ -6422,6 +6467,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 389091857}
   navMeshAgent: {fileID: 1439972656}
+  moveSpeed: 10
+  rotateSpeed: 10
+  calculateInterval: 10
 --- !u!4 &1439972658 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
@@ -6741,8 +6789,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   verticalSpeed: 114.5
   maximumSpeed: 114.5
+  moveSpeed: 0
   rb: {fileID: 1501252387}
   anim: {fileID: 333430401}
+  maxVelocity: 0
 --- !u!1001 &1523770351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6847,6 +6897,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 1608094949}
   navMeshAgent: {fileID: 1527748402}
+  moveSpeed: 10
+  rotateSpeed: 10
+  calculateInterval: 10
 --- !u!195 &1527748402
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7002,6 +7055,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {fileID: 75250688}
   navMeshAgent: {fileID: 1536058114}
+  moveSpeed: 10
+  rotateSpeed: 10
+  calculateInterval: 16
 --- !u!195 &1536058114
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7017,12 +7073,12 @@ NavMeshAgent:
   avoidancePriority: 50
   m_AngularSpeed: 180
   m_StoppingDistance: 1
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
+  m_AutoTraverseOffMeshLink: 0
+  m_AutoBraking: 0
+  m_AutoRepath: 0
   m_Height: 2
   m_BaseOffset: 0
-  m_WalkableMask: 3
+  m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!4 &1536058115 stripped
 Transform:
@@ -7399,6 +7455,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_Name
       value: Girl (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_TagString
@@ -7962,6 +8022,10 @@ PrefabInstance:
       value: Girl (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_TagString
       value: Opponent
       objectReference: {fileID: 0}
@@ -8444,6 +8508,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_Name
       value: Girl (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
       propertyPath: m_TagString

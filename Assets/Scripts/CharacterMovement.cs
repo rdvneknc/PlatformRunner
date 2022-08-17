@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public  float verticalSpeed = 240;
+    public float verticalSpeed;
     //public float horizontalSpeed;
-    public float maximumSpeed = 245;
-
+    //public float maximumSpeed = 245;
+    public float rotationSpeed;
     public Rigidbody rb;
     //public Vector3 move;
     public static bool movementEnabled = true;
 
     public Animator anim;
+
+    public float maxVelocity; 
 
     // Start is called before the first frame update
 
@@ -48,17 +50,19 @@ public class CharacterMovement : MonoBehaviour
 
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                rb.AddForce(Vector3.right * 225);
+                rb.AddForce(Vector3.right * rotationSpeed);
             }
 
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                rb.AddForce(Vector3.left * 225);
+                rb.AddForce(Vector3.left * rotationSpeed);
             }
 
+
+
         }
-        
-        
+
+        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVelocity);
 
 
 

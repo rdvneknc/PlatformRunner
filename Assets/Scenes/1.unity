@@ -384,6 +384,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4879453060023841511, guid: c9789374cd61721448fad5fd29af12e3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6713034925729144261, guid: c9789374cd61721448fad5fd29af12e3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.032
@@ -7088,10 +7092,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a356f5c2dce57445a61c396dcfaadd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 413158067}
-  target2: {fileID: 197136377}
-  speed: 5
-  moveHalfDonut: 0
+  speed: 1
+  lenght: 4
+  delay: 0
+  direction: {x: 1, y: 0, z: 0}
 --- !u!1 &1407721003 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d4012ad06f0d5c4fb8aac2ddc844115, type: 3}
@@ -7291,7 +7295,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 1
+  m_CollisionDetection: 3
 --- !u!65 &1501252388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7362,7 +7366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501252386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.198, z: -159.9}
+  m_LocalPosition: {x: -0, y: 1.198, z: -165.43}
   m_LocalScale: {x: 1, y: 2.2153208, z: 0.87736946}
   m_Children:
   - {fileID: 333430400}
@@ -7381,10 +7385,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd28fcffac70cd4c828b5b307817613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: 250
-  maximumSpeed: 250
+  verticalSpeed: 400
+  rotationSpeed: 300
   rb: {fileID: 1501252387}
   anim: {fileID: 333430401}
+  maxVelocity: 10
 --- !u!4 &1527690640 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7134964974033849496, guid: 31f64079ddd7c794484d6ba19021fd0e, type: 3}

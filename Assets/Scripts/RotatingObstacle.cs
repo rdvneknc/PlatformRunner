@@ -9,5 +9,7 @@ public class RotatingObstacle : MonoBehaviour
     void Update()
     {
         transform.Rotate(new Vector3(0, -60, 0) * Time.deltaTime * speed);
+        //torque uygulanacak, velocity sýnýrla, in fixedupdate
+
     }
 }
