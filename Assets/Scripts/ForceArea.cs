@@ -15,7 +15,7 @@ public class ForceArea : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            other.attachedRigidbody.AddForce(Vector3.left * 200);
+            other.attachedRigidbody.AddForce(Vector3.left * 175);
         }
     }
 

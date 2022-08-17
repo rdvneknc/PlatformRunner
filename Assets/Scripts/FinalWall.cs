@@ -16,14 +16,12 @@ public class FinalWall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if(other.gameObject.tag == "Player")
+        if (FinishFlag.levelEnded == true)
         {
             transform.position = Vector3.MoveTowards(transform.position, targetPosition.position, speed * Time.deltaTime);
+            
         }
     }
+
+  
 }

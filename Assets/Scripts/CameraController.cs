@@ -6,8 +6,8 @@ public class CameraController : MonoBehaviour
 {
     private Transform player;
 
-    private float offsetY = 8f;
-    private float offsetZ = -7f;
+    private float offsetY = 15f;
+    private float offsetZ = -13f;
 
     void Start()
     {

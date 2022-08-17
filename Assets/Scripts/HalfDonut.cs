@@ -14,21 +14,6 @@ public class HalfDonut : MonoBehaviour
     public bool moveHalfDonut = false;
 
 
-
-    private void Awake()
-    {
-        //donutRb.GetComponent<Rigidbody>();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //donutRb.AddForce(Vector3.left * 500, ForceMode.Impulse);
-
-        //InvokeRepeating("StickMovement", startDelay, repeatTiming);
-    }
-
-    // Update is called once per frame
     void Update()
     {
         
@@ -43,10 +28,10 @@ public class HalfDonut : MonoBehaviour
     IEnumerator StickMovement()
     {
         
-        transform.position = Vector3.Lerp(transform.position, target.position, speed * Time.deltaTime);
-        yield return new WaitForSeconds(3);
-        transform.position = Vector3.Lerp(transform.position, target2.position, speed * Time.deltaTime);
-        yield return new WaitForSeconds(3);
+        transform.position = Vector3.Lerp(transform.position, target.position, speed);
+        yield return new WaitForSeconds(4);
+        transform.position = Vector3.Lerp(transform.position, target2.position, speed);
+        yield return new WaitForSeconds(4);
         moveHalfDonut = false;
         
 

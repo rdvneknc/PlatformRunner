@@ -49,12 +49,12 @@ public class CharacterMovement : MonoBehaviour
 
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                rb.AddForce(Vector3.right * 150);
+                rb.AddForce(Vector3.right * 225);
             }
 
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                rb.AddForce(Vector3.left * 150);
+                rb.AddForce(Vector3.left * 225);
             }
 
             if (Input.GetKey(KeyCode.Space))

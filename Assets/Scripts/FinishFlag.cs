@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class FinishFlag : MonoBehaviour
 {
-    //public Rigidbody playerRb;
+
+    public static bool levelEnded;
 
     private void OnTriggerEnter(Collider other)
     {
 
         if (other.gameObject.tag == "Player")
         {
-
             StartCoroutine("StopPlayerMovement");
-            //CharacterMovement.movementEnabled = false;
 
         }
 
@@ -21,10 +20,10 @@ public class FinishFlag : MonoBehaviour
 
     IEnumerator StopPlayerMovement()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.2f);
         CharacterMovement.movementEnabled = false;
+        levelEnded = true;
         
-        //playerRb.isKinematic = true;
 
     }
 
