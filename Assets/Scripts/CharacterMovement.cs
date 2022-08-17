@@ -38,20 +38,23 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //rb.velocity = new Vector3(0, 0, 5) * verticalSpeed;
+        /*if (movementEnabled == true)
+        {
+            rb.velocity = new Vector3(0, 0, 1) * verticalSpeed;
+        }*/
 
-        if (movementEnabled == true)
+           if (movementEnabled == true)
         {
             rb.AddForce(Vector3.forward * verticalSpeed);
 
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                rb.AddForce(Vector3.right * 300);
+                rb.AddForce(Vector3.right * 150);
             }
 
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                rb.AddForce(Vector3.left * 300);
+                rb.AddForce(Vector3.left * 150);
             }
 
             if (Input.GetKey(KeyCode.Space))

@@ -25,6 +25,7 @@ public class RotatingStick : MonoBehaviour
         {
             other.attachedRigidbody.AddForce(Vector3.back * 30000);
         }*/
+
     }
 
 

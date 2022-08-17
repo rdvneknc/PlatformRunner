@@ -259,6 +259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &31711974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -821,6 +822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &95613632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -976,6 +978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 1501252391}
+  opponents: []
   respawnPoint: {fileID: 505182237}
 --- !u!64 &226189736
 MeshCollider:
@@ -1049,6 +1052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 1501252391}
+  opponents: []
   respawnPoint: {fileID: 505182237}
 --- !u!64 &227245309
 MeshCollider:
@@ -1225,6 +1229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 1501252391}
+  opponents: []
   respawnPoint: {fileID: 505182237}
 --- !u!64 &251521403
 MeshCollider:
@@ -1384,6 +1389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &258415562
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2382,6 +2388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &488391256
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2414,6 +2421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 1501252391}
+  opponents: []
   respawnPoint: {fileID: 505182237}
 --- !u!64 &490619859
 MeshCollider:
@@ -4295,6 +4303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &822947657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4345,6 +4354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &832477324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4656,6 +4666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 1501252391}
+  opponents: []
   respawnPoint: {fileID: 505182237}
 --- !u!64 &916375135
 MeshCollider:
@@ -4786,6 +4797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 1501252391}
+  opponents: []
   respawnPoint: {fileID: 505182237}
 --- !u!64 &949200732
 MeshCollider:
@@ -4950,6 +4962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 1501252391}
+  opponents: []
   respawnPoint: {fileID: 505182237}
 --- !u!64 &965566869
 MeshCollider:
@@ -5260,6 +5273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &1032322313
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6004,6 +6018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 1501252391}
+  opponents: []
   respawnPoint: {fileID: 505182237}
 --- !u!64 &1121099385
 MeshCollider:
@@ -6419,6 +6434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 1501252391}
+  opponents: []
   respawnPoint: {fileID: 505182237}
 --- !u!64 &1180548023
 MeshCollider:
@@ -6557,6 +6573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &1195993888
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6914,6 +6931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &1308094336
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6964,6 +6982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &1312360229
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7058,6 +7077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &1359857411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7129,6 +7149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &1407721009
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7361,7 +7382,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501252386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.198, z: 138.1}
+  m_LocalPosition: {x: -0, y: 1.198, z: -166.7}
   m_LocalScale: {x: 1, y: 2.2153208, z: 0.87736946}
   m_Children:
   - {fileID: 333430400}
@@ -7426,6 +7447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &1534106692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7557,6 +7579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &1566082008
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7612,6 +7635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &1601893904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8414,6 +8438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &1835730024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8935,6 +8960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player: {fileID: 1501252391}
+  opponents: []
   respawnPoint: {fileID: 505182237}
 --- !u!64 &1948441019
 MeshCollider:
@@ -9494,6 +9520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
+  opponents: []
 --- !u!65 &2115114901
 BoxCollider:
   m_ObjectHideFlags: 0
