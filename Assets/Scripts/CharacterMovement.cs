@@ -27,15 +27,14 @@ public class CharacterMovement : MonoBehaviour
         anim.SetFloat("horizontal", Input.GetAxis("Horizontal"));
 
 
-        verticalSpeed += 0.5f * Time.deltaTime;
+        /*verticalSpeed += 0.5f * Time.deltaTime;
 
         if(verticalSpeed >= maximumSpeed)
         {
             verticalSpeed = maximumSpeed;
-        }
+        }*/
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         /*if (movementEnabled == true)
@@ -57,10 +56,6 @@ public class CharacterMovement : MonoBehaviour
                 rb.AddForce(Vector3.left * 225);
             }
 
-            if (Input.GetKey(KeyCode.Space))
-            {
-                rb.AddForce(Vector3.up * 500);
-            }
         }
         
         

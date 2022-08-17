@@ -5,11 +5,6 @@ using UnityEngine;
 public class ForceArea : MonoBehaviour
 {
     
-    void Awake()
-    {
-        
-
-    }
 
     private void OnTriggerStay(Collider other)
     {
