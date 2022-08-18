@@ -20,7 +20,7 @@ public class FinishFlag : MonoBehaviour
 
     IEnumerator StopPlayerMovement()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(1);
         CharacterMovement.movementEnabled = false;
         levelEnded = true;
         

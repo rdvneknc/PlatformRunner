@@ -2,23 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StaticObstacle : MonoBehaviour
+public class HalfDonutCollider : MonoBehaviour
 {
-    [SerializeField] private Transform player;
-
-    [SerializeField] private Transform respawnPoint;
-
-    [SerializeField] private Transform[] opponents;
-
-
+    public Transform player;
+    public Transform respawnPoint;
 
     private void OnTriggerEnter(Collider other)
     {
-        
+
         if (other.gameObject.tag == "Player")
         {
             StartCoroutine("PlayerRespawn");
-            
+
 
         }
 
@@ -33,7 +28,7 @@ public class StaticObstacle : MonoBehaviour
 
     }
 
-    
+
     IEnumerator PlayerRespawn()
     {
         CharacterMovement.movementEnabled = false;
@@ -41,6 +36,4 @@ public class StaticObstacle : MonoBehaviour
         player.transform.position = respawnPoint.transform.position;
         CharacterMovement.movementEnabled = true;
     }
-
-
 }

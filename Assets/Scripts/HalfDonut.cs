@@ -11,14 +11,17 @@ public class HalfDonut : MonoBehaviour
     public Vector3 direction;
     private Vector3 startPosition;
 
+    public Transform player;
+    public Transform respawnPoint;
+
 
     private void Start()
     {
         startPosition = transform.position;
 
-        StartCoroutine(IPlayAnimation());
+        StartCoroutine(MoveHalfDonut());
     }
-    private IEnumerator IPlayAnimation()
+    private IEnumerator MoveHalfDonut()
     {
         while (true)
         {
@@ -35,5 +38,8 @@ public class HalfDonut : MonoBehaviour
             }
         }
     }
+
+    
+
 
 }

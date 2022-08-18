@@ -11,8 +11,6 @@ public class MovingObstacle : MonoBehaviour
 
     [SerializeField] private Transform player;
 
-    [SerializeField] private Transform[] opponents;
-
     [SerializeField] private Transform respawnPoint;
 
     void Start()
