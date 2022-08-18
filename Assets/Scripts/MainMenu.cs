@@ -9,16 +9,21 @@ public class MainMenu : MonoBehaviour
 
     public void PlayLevelOne()
     {
-        SceneManager.LoadScene("Scene name");
+        SceneManager.LoadScene("1");
     }
 
     public void PlayLevelTwo()
     {
-        SceneManager.LoadScene("Scene name");
+        SceneManager.LoadScene("2");
     }
 
     public void PlayLevelThree()
     {
-        SceneManager.LoadScene("Scene name");
+        SceneManager.LoadScene("3");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

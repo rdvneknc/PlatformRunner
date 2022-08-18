@@ -18,7 +18,7 @@ public class FinalWall : MonoBehaviour
 
     void Update()
     {
-        if (FinishFlag.levelEnded == true)
+        if (FinishFlag.levelOneEnded == true)
         {
             var targetPos = startPosition + direction * lenght;
             float dist = Vector3.Distance(transform.position, targetPos);

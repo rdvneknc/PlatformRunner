@@ -5,7 +5,8 @@ using UnityEngine;
 public class FinishFlag : MonoBehaviour
 {
 
-    public static bool levelEnded;
+    public static bool levelOneEnded = false;
+    public static bool levelThreeEnded = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,13 +14,19 @@ public class FinishFlag : MonoBehaviour
         {
             StartCoroutine("StopPlayerMovement");
         }
+
+        if (other.gameObject.tag == "Opponent")
+        {
+            levelThreeEnded = true;
+        }
     }
 
     IEnumerator StopPlayerMovement()
     {
         yield return new WaitForSeconds(1);
+        levelOneEnded = true;
         CharacterMovement.movementEnabled = false;
-        levelEnded = true;        
+              
     }
 
 

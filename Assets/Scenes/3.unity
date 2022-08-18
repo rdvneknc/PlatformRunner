@@ -955,17 +955,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!208 &117772936
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1175,86 +1164,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfed4c3bf9e677144a679b594db722d9, type: 3}
---- !u!1 &166168784 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-  m_PrefabInstance: {fileID: 474012641}
-  m_PrefabAsset: {fileID: 0}
---- !u!195 &166168785
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166168784}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 1
-  m_Speed: 7
-  m_Acceleration: 3
-  avoidancePriority: 50
-  m_AngularSpeed: 180
-  m_StoppingDistance: 1
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 3
-  m_ObstacleAvoidanceType: 4
---- !u!114 &166168786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166168784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfb95abcf079d4c4b99fc7688da144fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPosition: {fileID: 389091857}
-  moveSpeed: 10
-  rotateSpeed: 10
-  calculateInterval: 10
---- !u!65 &166168787
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166168784}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.09, y: 2.6, z: 1}
-  m_Center: {x: 0, y: 1.4, z: 0}
---- !u!4 &166168788 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-  m_PrefabInstance: {fileID: 474012641}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &166168789
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166168784}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b6e66b4d6c8510c47ba76e688c550088, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &239090680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2addc7cd17d9fbe4886d13adc7b8ceab, type: 3}
@@ -2157,83 +2066,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7134964974033849496, guid: 31f64079ddd7c794484d6ba19021fd0e, type: 3}
   m_PrefabInstance: {fileID: 2134539128}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &474012641
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8872410531565394040, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9d5d815f90b588c40b60ddd5c00b5d18, type: 2}
-    - target: {fileID: -8872410531565394040, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9d5d815f90b588c40b60ddd5c00b5d18, type: 2}
-    - target: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_RootOrder
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.08414841
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -165
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -1322978591113557007, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9d5d815f90b588c40b60ddd5c00b5d18, type: 2}
-    - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_Name
-      value: Girl (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
-      propertyPath: m_TagString
-      value: Opponent
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e8db49481e6a67a43a3b56174e84cac2, type: 3}
 --- !u!1 &488781813 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dfed4c3bf9e677144a679b594db722d9, type: 3}
@@ -2489,17 +2321,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!208 &534077598
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2857,7 +2678,7 @@ Transform:
   m_LocalScale: {x: 50, y: 5, z: 60}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &680109536
 MonoBehaviour:
@@ -2926,17 +2747,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!65 &699773837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3524,17 +3334,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!208 &765296156
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3678,17 +3477,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!208 &765879543
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4066,17 +3854,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!65 &846748232
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5291,17 +5068,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!208 &1206076237
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6137,7 +5903,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3d4012ad06f0d5c4fb8aac2ddc844115, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d4012ad06f0d5c4fb8aac2ddc844115, type: 3}
       propertyPath: m_LocalScale.x
@@ -6224,17 +5990,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!208 &1403767629
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6415,17 +6170,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!65 &1455067731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6515,17 +6259,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!65 &1479275405
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7093,17 +6826,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!208 &1540308618
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7365,17 +7087,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!208 &1600009991
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7829,17 +7540,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!65 &1711887469
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8386,17 +8086,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!208 &1847420314
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9046,7 +8735,7 @@ Transform:
   - {fileID: 356023086}
   - {fileID: 501901942}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1966930369
 GameObject:
@@ -9136,17 +8825,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!65 &1972447933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9412,17 +9090,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents:
-  - {fileID: 1536058115}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 166168788}
 --- !u!208 &2058326005
 NavMeshObstacle:
   m_ObjectHideFlags: 0
