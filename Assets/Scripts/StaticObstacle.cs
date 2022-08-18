@@ -8,29 +8,19 @@ public class StaticObstacle : MonoBehaviour
 
     [SerializeField] private Transform respawnPoint;
 
-    [SerializeField] private Transform[] opponents;
-
 
 
     private void OnTriggerEnter(Collider other)
-    {
-        
+    {       
         if (other.gameObject.tag == "Player")
         {
-            StartCoroutine("PlayerRespawn");
-            
-
+            StartCoroutine("PlayerRespawn");         
         }
 
         if (other.gameObject.tag == "Opponent")
         {
             other.gameObject.transform.position = respawnPoint.transform.position;
-
-
         }
-
-
-
     }
 
     

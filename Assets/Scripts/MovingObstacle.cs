@@ -43,17 +43,11 @@ public class MovingObstacle : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             StartCoroutine("PlayerRespawn");
-
-
         }
 
         if (other.gameObject.tag == "Opponent")
         {
             other.gameObject.transform.position = respawnPoint.transform.position;
-
-           
-
-
         }
 
     }
@@ -61,7 +55,7 @@ public class MovingObstacle : MonoBehaviour
     IEnumerator PlayerRespawn()
     {
         CharacterMovement.movementEnabled = false;
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(0.5f);
         player.transform.position = respawnPoint.transform.position;
         CharacterMovement.movementEnabled = true;
     }

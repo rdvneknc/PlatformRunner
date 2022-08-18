@@ -4,35 +4,41 @@ using UnityEngine;
 
 public class Paint : MonoBehaviour
 {
+    public bool painted = false;
+    
+    public Material whiteColor;
     public Material redColor;
 
-    //public Renderer render;
+    public Transform brush;
+
 
     //public Color defaultColor;
 
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.GetComponent<Material>();
+        gameObject.GetComponent<Renderer>().material = whiteColor;
 
-        //render.GetComponent<Renderer>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(painted == false)
+        {
+            if (this.transform.position.x == brush.transform.position.x && this.transform.position.y == brush.transform.position.y)
+            {
+                gameObject.GetComponent<Renderer>().material = redColor;
+
+                PaintPercentage.percentage += 0.5f;
+
+                painted = true;
+
+            }
+        }
+        
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "Brush")
-        {
-            
-            //redColor.color = Color.red;
-
-            //render.material.color = defaultColor;
-
-        }
-    }
 }

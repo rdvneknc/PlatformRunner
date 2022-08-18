@@ -60,7 +60,7 @@ public class OpponentController : MonoBehaviour
         }
 
 
-        //navMeshAgent.SetDestination(new Vector3(targetPosition.position.x, targetPosition.position.y, targetPosition.position.z));
+        //navMeshAgent.SetDestination(new Vector3(targetPosition.transform.position));
     }
 
 

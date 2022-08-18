@@ -13,26 +13,17 @@ public class HalfDonutCollider : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             StartCoroutine("PlayerRespawn");
-
-
         }
 
         if (other.gameObject.tag == "Opponent")
         {
             other.gameObject.transform.position = respawnPoint.transform.position;
-
-
         }
-
-
-
     }
-
-
     IEnumerator PlayerRespawn()
     {
         CharacterMovement.movementEnabled = false;
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.5f);
         player.transform.position = respawnPoint.transform.position;
         CharacterMovement.movementEnabled = true;
     }

@@ -9,22 +9,17 @@ public class FinishFlag : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
         if (other.gameObject.tag == "Player")
         {
             StartCoroutine("StopPlayerMovement");
-
         }
-
     }
 
     IEnumerator StopPlayerMovement()
     {
         yield return new WaitForSeconds(1);
         CharacterMovement.movementEnabled = false;
-        levelEnded = true;
-        
-
+        levelEnded = true;        
     }
 
 

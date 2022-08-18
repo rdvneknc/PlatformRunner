@@ -14,14 +14,11 @@ public class FallCollider : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             StartCoroutine("PlayerRespawn");
-
-
         }
 
         if (other.gameObject.tag == "Opponent")
         {
             other.gameObject.transform.position = respawnPoint.transform.position;
-
 
         }
 

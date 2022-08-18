@@ -8,6 +8,7 @@ TagManager:
   - Brush
   - TargetPosition
   - Opponent
+  - PlayerPosition
   layers:
   - Default
   - TransparentFX

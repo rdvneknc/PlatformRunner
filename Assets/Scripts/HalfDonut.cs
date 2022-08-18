@@ -28,10 +28,10 @@ public class HalfDonut : MonoBehaviour
             yield return new WaitForEndOfFrame();
 
             var targetPos = startPosition + direction * lenght;
-            float dist = Vector3.Distance(transform.position, targetPos);
+            float distance = Vector3.Distance(transform.position, targetPos);
             transform.position = Vector3.Lerp(transform.position, targetPos, speed * Time.deltaTime);
 
-            if (dist < 0.1f)
+            if (distance < 0.1f)
             {
                 direction *= -1;
                 yield return new WaitForSeconds(delay);

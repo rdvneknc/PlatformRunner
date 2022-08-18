@@ -4,63 +4,67 @@ using UnityEngine;
 
 public class BrushMovement : MonoBehaviour
 {
-    public Rigidbody rb;
+    public Vector3 movementDirection = Vector3.left;
 
-    public float brushSpeed = 20;
+    private float rightBoundary = 4f;
+    private float leftBoundary = -5f;
+    private float topBoundary = 19f;
+    private float bottomBoundary = 0f;
 
-    // Start is called before the first frame update
     void Start()
     {
-        rb.GetComponent<Rigidbody>();
+        Time.fixedDeltaTime = 0.035f;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            transform.Translate(new Vector3(20,0,0));
+            movementDirection = Vector3.up; 
+        }
 
-            
-        }*/
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            movementDirection = Vector3.left;
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            movementDirection = Vector3.down;
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            movementDirection = Vector3.right;
+        }
+
+
     }
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.RightArrow))
+        this.transform.position = new Vector3(Mathf.Round(this.transform.position.x + movementDirection.x), Mathf.Round(this.transform.position.y + movementDirection.y), -0.5f);
+
+        if (this.transform.position.x >= rightBoundary)
         {
-            //rb.MovePosition(new Vector3(9, rb.transform.position.y, rb.transform.position.z));
-
-            //rb.velocity = new Vector3(9, 0, 0) * brushSpeed;
-
-            rb.AddForce(Vector3.right * 5);
+            transform.position = new Vector3(rightBoundary, transform.position.y, transform.position.z);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (this.transform.position.x <= leftBoundary)
         {
-            //rb.MovePosition(new Vector3(9, rb.transform.position.y, rb.transform.position.z));
-
-            //rb.velocity = new Vector3(9, 0, 0) * brushSpeed;
-
-            rb.AddForce(Vector3.left * 5);
+            transform.position = new Vector3(leftBoundary, transform.position.y, transform.position.z);
         }
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (this.transform.position.y >= topBoundary)
         {
-            //rb.MovePosition(new Vector3(9, rb.transform.position.y, rb.transform.position.z));
-
-            //rb.velocity = new Vector3(9, 0, 0) * brushSpeed;
-
-            rb.AddForce(Vector3.up * 5);
+            transform.position = new Vector3(transform.position.x, topBoundary, transform.position.z);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (this.transform.position.y <= bottomBoundary)
         {
-            //rb.MovePosition(new Vector3(9, rb.transform.position.y, rb.transform.position.z));
-
-            //rb.velocity = new Vector3(9, 0, 0) * brushSpeed;
-
-            rb.AddForce(Vector3.down * 5);
+            transform.position = new Vector3(transform.position.x, bottomBoundary, transform.position.z);
         }
     }
+
 }
