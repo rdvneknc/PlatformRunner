@@ -12,17 +12,12 @@ public class Paint : MonoBehaviour
     public Transform brush;
 
 
-    //public Color defaultColor;
-
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         gameObject.GetComponent<Renderer>().material = whiteColor;
 
-
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(painted == false)

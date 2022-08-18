@@ -7,17 +7,6 @@ public class PositionUp : MonoBehaviour
 {
     public GameObject positionDisplay;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnTriggerExit(Collider other)
     {

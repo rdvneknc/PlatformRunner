@@ -355,7 +355,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &31711974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -734,8 +733,10 @@ GameObject:
   - component: {fileID: 86598075}
   - component: {fileID: 86598074}
   - component: {fileID: 86598073}
+  - component: {fileID: 86598077}
+  - component: {fileID: 86598078}
   m_Layer: 0
-  m_Name: Floor
+  m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -812,12 +813,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86598072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2699535, y: -14, z: -186.79}
-  m_LocalScale: {x: 100, y: 5, z: 200}
+  m_LocalPosition: {x: 16.0096, y: -14, z: -209.3123}
+  m_LocalScale: {x: 68.38134, y: 5, z: 160.82928}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &86598077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86598072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1d09c329f76d942b0f00d88dd27aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1501252391}
+  respawnPoint: {fileID: 505182237}
+--- !u!65 &86598078
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86598072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &95613626 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d4012ad06f0d5c4fb8aac2ddc844115, type: 3}
@@ -855,7 +883,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &95613632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1503,7 +1530,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &258415562
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2656,7 +2682,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &488391256
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4717,7 +4742,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &822947657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4768,7 +4792,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &832477324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5914,7 +5937,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &1032322313
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7482,7 +7504,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &1195993888
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8054,7 +8075,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &1308094336
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8105,7 +8125,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &1312360229
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8254,7 +8273,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &1359857411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8352,7 +8370,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &1407721009
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8855,7 +8872,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &1534106692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8987,7 +9003,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &1566082008
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9043,7 +9058,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &1601893904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10198,7 +10212,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &1835730024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11268,7 +11281,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1501252391}
   respawnPoint: {fileID: 505182237}
-  opponents: []
 --- !u!65 &2115114901
 BoxCollider:
   m_ObjectHideFlags: 0
